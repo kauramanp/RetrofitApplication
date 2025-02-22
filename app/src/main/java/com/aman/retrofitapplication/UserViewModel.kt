@@ -18,6 +18,7 @@ class UserViewModel : ViewModel() {
                 response: Response<ArrayList<UserResponseItem>>
             ) {
                 Log.e("TAG", " in success ${response.body()}")
+                userList.postValue(response.body())
             }
 
             override fun onFailure(call: Call<ArrayList<UserResponseItem>>, t: Throwable) {

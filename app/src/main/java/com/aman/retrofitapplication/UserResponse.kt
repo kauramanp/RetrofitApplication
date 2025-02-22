@@ -1,8 +1,5 @@
 package com.aman.retrofitapplication
 
-class UserResponse : ArrayList<UserResponseItem>()
-
-
 data class UserResponseItem(
     val email: String,
     val gender: String,
