@@ -8,7 +8,7 @@ import retrofit2.http.GET
 import okhttp3.logging.HttpLoggingInterceptor
 
 object RetrofitInstance {
-
+    //loggin interceptor to get logs in the logcat
     val logging = HttpLoggingInterceptor()
         .setLevel(HttpLoggingInterceptor.Level.BODY)
     val client = OkHttpClient.Builder().addInterceptor(logging).build()
